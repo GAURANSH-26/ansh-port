@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+BE+WAL:wght@100..400&family=Rubik+Distressed&display=swap');
+@import './colors.scss';
+
+.home-card {
+    color: white;
+    margin: auto;
+
+    h1 {
+        font-family: "Kanit", sans-serif;
+        font-size: 4rem;
+        letter-spacing: 12px;
+        line-height: 50px;
+    }
+
+    h1:nth-of-type(2) {
+        color: grey;
+    }
+
+    .peragraph {
+        font-family: "Kanit", sans-serif;
+        max-width: 300px;
+        margin: 15px 0 35px 0;
+        color: gray;
+        position: relative;
+
+        img {
+            width: 2.5rem;
+            position: absolute;
+            right: 114px;
+            top: 20px;
+        }
+    }
+
+    .flex-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .card1,
+        .card2 {
+            box-sizing: border-box;
+            margin: 10px 0;
+        }
+
+        .card1 {
+            width: 270px;
+            height: 230px;
+            background-color: orange;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            img {
+                width: 15px;
+            }
+
+            p {
+                font-family: "Kanit", sans-serif;
+                margin: 10px 0;
+                color: white;
+            }
+
+            button {
+                align-self: flex-end;
+                padding: 5px;
+                background: transparent;
+                border: 1.5px solid white;
+                border-radius: 5px;
+                width: 39px;
+                color: white;
+            }
+        }
+
+        .card2 {
+            width: 330px;
+            height: 230px;
+            background-color: rgb(0, 255, 85);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px 0 0 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            img {
+                width: 20px;
+            }
+
+            p {
+                color: black;
+                font-family: "Kanit", sans-serif;
+                margin: 10px 0;
+            }
+
+            button {
+                align-self: flex-end;
+                padding: 6px;
+                background: transparent;
+                border: 1.5px solid black;
+                border-radius: 5px;
+                width: 34px;
+                color: black;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .homepage {
+            flex-direction: column;
+        }
+
+        .intro {
+            margin: 68px 0 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: 6px;
+            line-height: 40px;
+        }
+
+        p {
+            > img {
+                margin: 21px 105px;
+            }
+        }
+
+        .flex-card {
+            .card1,
+            .card2 {
+                width: 95%;
+                margin: 10px 0;
+            }
+
+            .card1 {
+                padding: 20px;
+
+                img {
+                    width: 20px;
+                }
+
+                p {
+                    top: 20px;
+                    left: 5px;
+                }
+
+                button {
+                    top: 45px;
+                    left: 130px;
+                    padding: 4px;
+                    width: 30px;
+                }
+            }
+
+            .card2 {
+                padding: 20px;
+
+                img {
+                    width: 20px;
+                }
+
+                p {
+                    top: 20px;
+                    left: 30px;
+                }
+
+                button {
+                    top: 45px;
+                    left: 190px;
+                    padding: 5px;
+                    width: 28px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        height: 80vh;
+
+        .intro {
+            position: relative;
+            top: -94px;
+            left: 46px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            letter-spacing: 4px;
+            line-height: 30px;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+
+        p {
+            position: relative;
+            right: 70px;
+            max-width: 285px;
+
+            > img {
+                margin: 6px -35px;
+            }
+        }
+
+        .flex-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: -38px -60px 0px -60px;
+
+            .card1,
+            .card2 {
+                width: 85%;
+                height: 17rem;
+                margin: 10px 0;
+            }
+
+            .card1 {
+                padding: 15px;
+
+                img {
+                    width: 20px;
+                }
+
+                p {
+                    margin: 15px 0 0;
+                }
+
+                button {
+                    margin-top: 35px;
+                    padding: 3px;
+                    width: 25px;
+                }
+            }
+
+            .card2 {
+                padding: 15px;
+
+                img {
+                    width: 20px;
+                }
+
+                p {
+                    margin: 15px 0 0;
+                }
+
+                button {
+                    margin-top: 35px;
+                    padding: 4px;
+                    width: 22px;
+                }
+            }
+        }
+    }
+}

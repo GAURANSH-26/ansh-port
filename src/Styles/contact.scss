@@ -1,0 +1,13 @@
+.contactbg {
+    background-image: url(/src/assets/contactbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center; /* Ensure content is centered vertically */
+    justify-content: center; /* Center content horizontally */
+
+
+}
